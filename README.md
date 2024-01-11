@@ -1,6 +1,6 @@
 # Admin-Dasboard
 
-Odin project using HTML & CSS
+Odin project with HTML & CSS
 
 Images source:
 https://pixabay.com/
