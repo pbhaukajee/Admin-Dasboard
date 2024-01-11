@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: roboto-regular;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto-medium;
+  src: url(./fonts/Roboto-Medium.ttf);
+}
+
+body {
+  font-family: roboto-regular;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -13,51 +27,63 @@
   background-color: rgba(255, 255, 255, 0.995);
   grid-column: 2 / 3;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 30px 100px;
+  padding: 10px;
 }
 
 .nav-1,
 .nav-2 {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
 }
 
 .nav-1-left {
-  grid-column: 1 / 6;
-  display: grid;
+  grid-template-columns: 1fr 4fr;
   gap: 10px;
   align-items: center;
+  display: grid;
 }
 
 .nav-1-right {
-  grid-column: 6/9;
+  grid-template-columns: repeat(2, 1fr) 2fr;
   display: grid;
   align-items: center;
+  gap: 10px;
 }
 
 .search {
   justify-self: end;
 }
 
+.nav-intro {
+  justify-self: start;
+  font-family: roboto-medium;
+  font-weight: 400;
+}
+
 .box {
-  grid-column: 2 / 6;
   border: 1px solid black;
   height: 20px;
   border-radius: 10px;
 }
 
 .nav-bell {
-  grid-column: 6;
+  justify-self: end;
 }
 
-.nav-icon-1 {
-  grid-column: 7;
+.nav-2-left {
+  padding: 25px;
+  grid-template-columns: 75px 250px;
+  gap: 10px;
+  align-items: center;
+  display: grid;
 }
 
-.nav-intro {
-  grid-column: 8;
+.nav-2-right {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  align-items: center;
 }
 
 button {
@@ -77,4 +103,15 @@ button {
 
 .main {
   background-color: rgb(196, 206, 215);
+}
+
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+  object-fit: fill;
+}
+
+.img-dog {
+  width: 65px;
 }
