@@ -146,6 +146,8 @@ button {
   height: 40px;
   width: 150px;
   cursor: pointer;
+  font-family: roboto-medium;
+  font-size: 15px;
 }
 
 /* sidebar */
@@ -202,6 +204,11 @@ a {
   padding: 30px;
 }
 
+.main-right {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -241,9 +248,6 @@ h3 {
   height: 25px;
 }
 
-.main-left {
-}
-
 .announcement {
   display: flex;
   flex-direction: column;
@@ -255,7 +259,6 @@ h3 {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 200px;
   gap: 25px;
-  border: 1px solid white;
   padding: 10px;
   background-color: whitesmoke;
   border-radius: 8px;
@@ -275,4 +278,33 @@ h3 {
 
 .announcement-info:not(:last-child) {
   border-bottom: 1px solid rgba(128, 128, 128, 0.599);
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-trending {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 200px;
+  gap: 25px;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.trending-info {
+  display: flex;
+  gap: 20px;
+}
+
+.trending-info img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
