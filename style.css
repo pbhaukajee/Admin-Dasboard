@@ -43,9 +43,15 @@ img {
   padding: 10px;
   padding-bottom: 0px;
   gap: 40px;
+  border-bottom: 5px solid rgba(120, 117, 117, 0.349);
 }
 
-.nav-1,
+.nav-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
 .nav-2 {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -64,6 +70,20 @@ img {
   display: grid;
   align-items: center;
   gap: 10px;
+}
+
+.nav-2-left {
+  grid-template-columns: 50px 200px;
+  gap: 10px;
+  align-items: center;
+  display: grid;
+}
+
+.right-navigation {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  gap: 10px;
+  align-items: center;
 }
 
 .search {
@@ -102,6 +122,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   display: grid;
   align-items: center;
+  gap: 30px;
 }
 
 button {
@@ -109,8 +130,8 @@ button {
   color: white;
   border: none;
   border-radius: 20px;
-  height: 30px;
-  width: 90px;
+  height: 40px;
+  width: 150px;
 }
 
 /* sidebar */
@@ -161,5 +182,49 @@ a {
 /* main */
 
 .main {
-  background-color: rgb(196, 206, 215);
+  background-color: rgba(196, 206, 215, 0.412);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+h3 {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.projects-content {
+  border: 1px solid white;
+  border-left: 5px solid rgb(230, 161, 34);
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  position: relative;
+}
+
+h4 {
+  font-family: roboto-medium;
+}
+
+.content-icon {
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+
+.content-icon img {
+  height: 25px;
 }
