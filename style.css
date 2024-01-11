@@ -31,6 +31,19 @@ img {
   border-radius: 50%;
   width: 50px;
   height: auto;
+  cursor: pointer;
+}
+
+p {
+  color: grey;
+}
+
+h4 {
+  font-family: roboto-medium;
+}
+
+h5 {
+  font-family: roboto-medium;
 }
 
 /* header */
@@ -132,6 +145,7 @@ button {
   border-radius: 20px;
   height: 40px;
   width: 150px;
+  cursor: pointer;
 }
 
 /* sidebar */
@@ -184,7 +198,8 @@ a {
 .main {
   background-color: rgba(196, 206, 215, 0.412);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  padding: 30px;
 }
 
 .projects {
@@ -211,10 +226,7 @@ h3 {
   background-color: whitesmoke;
   border-radius: 10px;
   position: relative;
-}
-
-h4 {
-  font-family: roboto-medium;
+  cursor: pointer;
 }
 
 .content-icon {
@@ -227,4 +239,40 @@ h4 {
 
 .content-icon img {
   height: 25px;
+}
+
+.main-left {
+}
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-announcement {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 200px;
+  gap: 25px;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.section-announcement p {
+  font-size: small;
+}
+
+.announcement-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+.announcement-info:not(:last-child) {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.599);
 }
